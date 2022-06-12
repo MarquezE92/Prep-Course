@@ -1,0 +1,29 @@
+
+/*Con el * se seleccionan todos los elementos,
+Usar el sistema de código hexagesimal es la forma más precisa de elegir color (Ej. color-hex.com)*/
+* {color: #4d0000;}
+
+/*Para insertar imagen como fondo para la página*/
+html {background-image: url(https://img.freepik.com/foto-gratis/fondo-textura-papel-espacio-diseno_53876-147801.jpg?w=2000)}
+
+/*Para dar estilo al borde, primero se escribe el grosor, después el tipo de borde (solid, dotted, double, etc.)
+y por último el color*/
+#thirdDiv {height: 600px; width: 500px; background: #e6e6e6; padding: 50px; border: 3px inset lavender;}
+#thirdDiv:hover {background: #f2f2f2; border: 3px outset lavender}
+
+#spanId {margin: 50px; font-size: 18px;}
+
+/*Tipo de letra se puede importar de Google Fonts, font-weight controla el grosor de la línea*/
+h1 {color: maroon; font-family: 'Lobster', cursive; font-weight: 150; text-align: center;}
+
+/*:hover sirve para generar un cambio cuando el mouse pase sobre el elemento seleccionado*/
+h1:hover {color: teal;}
+
+/*Para centrar texto*/
+p {text-align: center;}
+
+img {width: 400px}
+
+/*Para centrar un elemento horizontalmente en la página*/
+#thirdDiv {margin-right: auto; margin-left: auto;}
+
