@@ -8,7 +8,7 @@ html {background-image: url(https://img.freepik.com/foto-gratis/fondo-textura-pa
 
 /*Para dar estilo al borde, primero se escribe el grosor, después el tipo de borde (solid, dotted, double, etc.)
 y por último el color*/
-#thirdDiv {height: 600px; width: 500px; background: #e6e6e6; padding: 50px; border: 3px inset lavender;}
+#thirdDiv {height: 600px; width: 500px; background: #e6e6e6; padding: 50px; padding-right: 31px; border: 3px inset lavender;}
 #thirdDiv:hover {background: #f2f2f2; border: 3px outset lavender}
 
 #spanId {margin: 50px; font-size: 18px;}
@@ -27,3 +27,18 @@ img {width: 400px}
 /*Para centrar un elemento horizontalmente en la página*/
 #thirdDiv {margin-right: auto; margin-left: auto;}
 
+/*¿Cómo modificamos el espacio que los elementos ocupan en la página?
+display: block (completa la línea de la página, llena el bloque)
+display: inline (solo ocupa el espacio que efectivamente ocupe el contenido, se pueden poner más elementos en la misma línea)
+display: none (desaparece de la página el elemento y el espacio que ocupaba) != visibility:hidden (que no muestra el contenido, pero deja el espacio vacante en la pág)
+display: flex (trabaja sobre el elemento padre o contenedor de los elementos que queremos mover)
+			¿Con qué comandos?
+				align-items: center (los centra en el eje Y); flex-star=arriba; flex-end=abajo
+				justify-content: center (los centra en el eje X); flex-star=izquierda; flex-end=derecha)
+				flex-direction: column (los elementos se alinean verticalmente); row=horizontalmente
+			También puede trabajar sobre el elemento contenido: 
+				align-self*/
+
+#thirdDiv {display: flex;
+			justify-content: center;
+			align-items: center;}
